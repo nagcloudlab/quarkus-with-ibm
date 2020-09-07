@@ -12,7 +12,6 @@ import java.net.URI;
 @Path("/developer")
 public class DeveloperResource {
 
-
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)

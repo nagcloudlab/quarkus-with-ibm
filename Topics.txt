@@ -1,5 +1,11 @@
 
 -----------------------------------------------------------------
+Quarkus Overview
+-----------------------------------------------------------------
+
+-> what , why & how it differ from existing solutions
+
+-----------------------------------------------------------------
 1.introduction
 -----------------------------------------------------------------
 
@@ -22,20 +28,16 @@
 
 1. Live Reloading with Dev Mode
 
-2. serving static resources from quarkus
-
 
 -----------------------------------------------------------------
 3. Developing RESTful services
 -----------------------------------------------------------------
 
-JAX-RS spec
+using JAX-RS spec
 
      implementation(s)
 
-        - Jersey
         - RESTEasy    ( jboss community )
-        ..
  
 
 1. creating a simple REST api Endpoint
@@ -51,15 +53,11 @@ JAX-RS spec
 -----------------------------------------------------------------
 
 imp-note :
-
-
 in quarkus, we can write HTTP Endpoints in 2 ways
 
 
     => JAX-RS resource
     => reactive routes using Vertx
-
-
 
 -----------------------------------------------------------------
 4. configuration with Quarkus
@@ -73,8 +71,15 @@ in quarkus, we can write HTTP Endpoints in 2 ways
       dev, test, prod
 
   4. configuring with custom profiles
-  
-      
+
+   ......
+
+
+   
+
+
+
+
 
  
 

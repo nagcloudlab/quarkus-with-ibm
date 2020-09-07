@@ -10,7 +10,6 @@ import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriInfo;
 import java.util.List;
 
-
 @Path("/hello")
 public class GreetingResource {
 
@@ -26,20 +25,14 @@ public class GreetingResource {
     @ConfigProperty(name = "greeting.suffix")
     List<String> suffixes;
 
-
     @Path("/config")
     @GET
     public String helloConfig() {
-//        config.getPropertyNames().forEach(System.out::println);
+        // config.getPropertyNames().forEach(System.out::println);
         return config.getValue("greeting.message", String.class);
     }
 
-
-    @GET
-    public String hello() {
-        return message;
-    }
-
+   
     @Path("/optional")
     @GET()
     public String helloOptional() {
@@ -52,16 +45,6 @@ public class GreetingResource {
         return message + "" + suffixes.get(1);
     }
 
-    public static enum Order {
-        desc, asc
-    }
-
-//    @GET
-//    @Produces(MediaType.TEXT_PLAIN)
-//    public String hello() {
-//        return "hola";
-//    }
-
 
     @LOCK
     @Produces(MediaType.TEXT_PLAIN)
@@ -71,11 +54,20 @@ public class GreetingResource {
     }
 
 
+    public static enum Order {
+        desc, asc
+    }
+
     @GET
     @Path("/params")
     @Produces(MediaType.TEXT_PLAIN)
     public String helloWithParams(@QueryParam("order") Order order, @HeaderParam("authorization") String authorization, @Context UriInfo uriInfo) {
         return String.format("URI %s Order %s - Authorization - %s", uriInfo.getAbsolutePath(), order, authorization);
+    }
+
+    @GET
+    public String hello() {
+        return message;
     }
 
     @POST
@@ -96,6 +88,5 @@ public class GreetingResource {
     public void delete() {
         System.out.println("delete");
     }
-
 
 }

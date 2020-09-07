@@ -1,7 +1,5 @@
 
 
-
-
 traditional java application
 ----------------------------
 
