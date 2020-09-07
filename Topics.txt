@@ -1,0 +1,55 @@
+
+
+-----------------------------------------------------------------
+
+1. scaffolding a Quarkus project with Maven
+
+ - mvn io.quarkus:quarkus-maven-plugin:1.7.2.Final:create
+
+2. scaffolding a Quarkus project with Gradle
+
+ - mvn io.quarkus:quarkus-maven-plugin:1.7.2.Final:create -DbuildTool=gradle
+
+3. scaffolding a Quarkus project with Quarkus start coding website
+
+4. scaffolding a Quarkus project with VS-code / Eclipse / Intellij-IDEA
+
+
+-----------------------------------------------------------------
+
+
+1. Live Reloading with Dev Mode
+
+
+-----------------------------------------------------------------
+
+
+-----------------------------------------------------------------
+Developing RESTful services
+-----------------------------------------------------------------
+
+JAX-RS spec
+
+     implementation(s)
+
+        - Jersey
+        - RESTEasy    ( jboss community )
+        ..
+ 
+
+1. creating a simple REST api Endpoint
+2. extracting request parameters
+    -  query/path/header/cookie/form/matrix parameters
+3. using semantic HTTP Response codes
+
+    - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
+
+4. binding HTTP methods
+
+5. enable cors
+6. reactive routes
+
+-----------------------------------------------------------------
+
+
+

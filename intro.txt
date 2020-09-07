@@ -1,0 +1,41 @@
+
+
+
+
+traditional java application
+----------------------------
+
+ start-up time    : 2.66s
+ memory           : 221m
+ classes loaded   : 6k
+
+
+why traditional java application is slow in startup & consuming high memory ?
+
+    -> heavy lisftig at startup time & unnecessary bytecodes at runtime
+
+
+modern java application with Quarkus as JVM application
+--------------------------------------------------------
+
+start-up time    : 0.8s
+memory           : 123m
+classes loaded   : 4k
+
+
+
+modern java application with Quarkus as Native application 
+-----------------------------------------------------------
+
+start-up time    : 0.017s
+memory           : 19m
+classes loaded   : Not Applicable
+
+
+modern java application with Quarkus as Native application  within container
+-----------------------------------------------------------------------------
+
+start-up time    : 0.034s
+memory           : 19m
+classes loaded   : Not Applicable
+
