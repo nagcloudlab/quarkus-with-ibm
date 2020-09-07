@@ -1,5 +1,6 @@
 
-
+-----------------------------------------------------------------
+1.introduction
 -----------------------------------------------------------------
 
 1. scaffolding a Quarkus project with Maven
@@ -16,16 +17,16 @@
 
 
 -----------------------------------------------------------------
-
+2.developer friendly
+-----------------------------------------------------------------
 
 1. Live Reloading with Dev Mode
 
+2. serving static resources from quarkus
+
 
 -----------------------------------------------------------------
-
-
------------------------------------------------------------------
-Developing RESTful services
+3. Developing RESTful services
 -----------------------------------------------------------------
 
 JAX-RS spec
@@ -41,15 +42,41 @@ JAX-RS spec
 2. extracting request parameters
     -  query/path/header/cookie/form/matrix parameters
 3. using semantic HTTP Response codes
-
     - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
-
 4. binding HTTP methods
-
-5. enable cors
-6. reactive routes
+5. enabling cross-origin-resource-sharing ( cors )
+6. Reactive Routes to process HTTP requests  ( yet to cover )
+7. Intercepting HTTP requests using Vertx filters
 
 -----------------------------------------------------------------
+
+imp-note :
+
+
+in quarkus, we can write HTTP Endpoints in 2 ways
+
+
+    => JAX-RS resource
+    => reactive routes using Vertx
+
+
+
+-----------------------------------------------------------------
+4. configuration with Quarkus
+-----------------------------------------------------------------
+
+
+  1. configuring the application with custom properties
+  2. Accessing configuration properties programmatically
+  3. configuring with profiles
+
+      dev, test, prod
+
+  4. configuring with custom profiles
+  
+      
+
+ 
 
 
 
