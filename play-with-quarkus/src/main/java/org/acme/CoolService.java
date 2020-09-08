@@ -1,13 +1,13 @@
 package org.acme;
 
-import javax.inject.Singleton;
+import javax.enterprise.context.ApplicationScoped;
 
-@Singleton
-public class AmazineService {
-    public AmazineService(){
-        System.out.println("AmazineService instantiated..");
+@ApplicationScoped
+public class CoolService {
+    public CoolService(){
+        System.out.println("CoolService instantiated..");
     }
     String ping() {
-        return "amazing";
+        return "cool";
     }
 }

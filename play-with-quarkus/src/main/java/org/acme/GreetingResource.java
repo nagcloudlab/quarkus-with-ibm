@@ -5,29 +5,57 @@ import org.eclipse.microprofile.config.inject.ConfigProperty;
 import org.jboss.logging.Logger;
 
 import javax.inject.Inject;
+import javax.inject.Named;
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.UriInfo;
 import java.util.List;
+import java.util.Locale;
 
 @Path("/hello")
 public class GreetingResource {
 
 
-    private static  Logger logger=Logger.getLogger(GreetingResource.class);
+    @Inject
+    AmazingService amazineService;
 
-    @Path("/log")
+
+    @Inject
+    CoolService coolService;
+
     @GET
-    public String helloLog(){
-        logger.info("i said hello");
-        return  "hello";
+    @Path("/ping")
+    public String ping(){
+        return amazineService.ping() + coolService.ping();
+    }
+
+
+    @Inject
+    GreetingService greetingService;
+
+    @Inject
+    //@Named("de")
+    @SpainLocale
+    Locale locale;
+
+
+    @Inject
+    String timeZome;
+
+    @GET
+    @LogEvent
+    public String hello() {
+        return greetingService.getGreeting() +" "+locale.getCountry() +" "+timeZome;
     }
 
 
 
     @Inject
     Config config;
+
+    @ConfigProperty(name = "greeting.color")
+    String color;
 
     @ConfigProperty(name = "greeting.message")
     String message;
@@ -38,6 +66,21 @@ public class GreetingResource {
     @ConfigProperty(name = "greeting.suffix")
     List<String> suffixes;
 
+    private static Logger logger=Logger.getLogger(GreetingResource.class);
+
+    @Path("/log")
+    @GET
+    public String helloLog() {
+        logger.info("i said hello");
+        return "hello";
+    }
+
+    @Path("/color")
+    @GET
+    public String color() {
+        return color;
+    }
+
     @Path("/config")
     @GET
     public String helloConfig() {
@@ -45,7 +88,7 @@ public class GreetingResource {
         return config.getValue("greeting.message", String.class);
     }
 
-   
+
     @Path("/optional")
     @GET()
     public String helloOptional() {
@@ -78,10 +121,8 @@ public class GreetingResource {
         return String.format("URI %s Order %s - Authorization - %s", uriInfo.getAbsolutePath(), order, authorization);
     }
 
-    @GET
-    public String hello() {
-        return message;
-    }
+
+
 
     @POST
     @Consumes(MediaType.TEXT_PLAIN)

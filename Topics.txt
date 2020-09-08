@@ -64,23 +64,59 @@ in quarkus, we can write HTTP Endpoints in 2 ways
 
 
   1. configuring the application with custom properties
-  2. Accessing configuration properties programmatically
+  2. accessing configuration properties programmatically
   3. configuring with profiles
 
-      dev, test, prod
+      => dev, test, prod
 
   4. configuring with custom profiles
 
+  5. creating custom sources
    
 
 
+-----------------------------------------------------------------
+5. Logging
+-----------------------------------------------------------------
    
 
 
+1. changing Logger configuration
+
+2. Adavanced Logging
+
+    - GELF  with ELK 
+    - JSON
 
 
 
+
+-----------------------------------------------------------------
+5. Programming Model
+-----------------------------------------------------------------
+
+ -> Marshalling/Unmarshalling JSON
+ -> Marshalling/Unmarshalling XML
+ -> Validating Input And Output value
  
+     -> using validator api ( javax.validator.* )  : JSR 303 spec
+
+ -> Injecting dependencies
+
+      => imp-note : quarkus is based on CDI spec  for DI
+
+ -> Using Named Qualifier
+
+ -> Using Custom Qualifier
+  
+ -> Creating Factories
+
+ -> Executing Object/Component Life Cycle Events
+
+ -> Executing Application Life Cycle Events
+
+ -> Creating Interceptors
 
 
+--------------------------------------------------------------
 
