@@ -119,4 +119,48 @@ in quarkus, we can write HTTP Endpoints in 2 ways
 
 
 --------------------------------------------------------------
+6. Package Quarkus Application
+--------------------------------------------------------------
 
+1. Running in command-line
+
+JVM envi
+-----------
+
+2. creating a Runnable JAR file ( thin jar )
+3. Uber-JAR Packaging
+
+Native Envi
+--------------
+
+4. Building a Native executable 
+
+Container Envi
+---------------
+
+5. Building a Docker Container for JAR file
+6. Building a Docker Container for Native file
+
+ 
+
+--------------------------------------------------------------
+7. Persistence
+--------------------------------------------------------------
+
+
+1. define a datasource
+
+    - Agroal
+
+2. Using Multiple datasources
+
+
+3. data-access in quarkus
+
+    2 patterns
+
+    -> active-record pattern ( using panache   )
+    -> respository pattern
+
+
+    

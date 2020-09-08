@@ -11,7 +11,6 @@ public class LocaleProducer {
     @Produces
     @Named("de")
     public Locale getDefault(){
-        //
         return  Locale.getDefault();
     }
 
