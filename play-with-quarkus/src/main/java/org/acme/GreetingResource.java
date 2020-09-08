@@ -2,6 +2,7 @@ package org.acme;
 
 import org.eclipse.microprofile.config.Config;
 import org.eclipse.microprofile.config.inject.ConfigProperty;
+import org.jboss.logging.Logger;
 
 import javax.inject.Inject;
 import javax.ws.rs.*;
@@ -12,6 +13,18 @@ import java.util.List;
 
 @Path("/hello")
 public class GreetingResource {
+
+
+    private static  Logger logger=Logger.getLogger(GreetingResource.class);
+
+    @Path("/log")
+    @GET
+    public String helloLog(){
+        logger.info("i said hello");
+        return  "hello";
+    }
+
+
 
     @Inject
     Config config;

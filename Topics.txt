@@ -47,8 +47,7 @@ using JAX-RS spec
     - https://developer.mozilla.org/en-US/docs/Web/HTTP/Status
 4. binding HTTP methods
 5. enabling cross-origin-resource-sharing ( cors )
-6. Reactive Routes to process HTTP requests  ( yet to cover )
-7. Intercepting HTTP requests using Vertx filters
+6. Intercepting HTTP requests using Vertx filters
 
 -----------------------------------------------------------------
 
@@ -72,7 +71,7 @@ in quarkus, we can write HTTP Endpoints in 2 ways
 
   4. configuring with custom profiles
 
-   ......
+   
 
 
    

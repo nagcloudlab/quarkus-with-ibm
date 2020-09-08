@@ -1,0 +1,93 @@
+
+
+
+---------------------------------------------------------------------------------------------
+Introduction
+---------------------------------------------------------------------------------------------
+
+
+“Kubernetes is becoming the de facto platform to deploy our enterprise applications nowadays.”
+
+“The movement to containers and Kubernetes has led to changes in the way 
+we code, deploy, and maintain our Java-based applications. ”
+
+“You can easily get yourself in trouble if you containerize and run a Java application 
+without taking proper measures.”
+
+“Containers in Pods (a Kubernetes term) are the basic units in Kubernetes, 
+so it is very important to have a good understanding of how to containerize a Java-based application correctly 
+to avoid pitfalls, wasted work, and extra hours of frustration.”
+
+
+“Quarkus is a cloud-native framework with built-in Kubernetes integration.”
+
+“It is an open source stack, released under the Apache License 2.0, 
+that helps you create Kubernetes-native applications tailored for GraalVM and OpenJDK HotSpot. ”
+
+
+“It is built on top of popular libraries and technologies 
+such as Hibernate, Eclipse MicroProfile, Kubernetes, Apache Camel, and Eclipse Vert.x.”
+
+“The benefits of Quarkus include easy integration with Docker and Kubernetes, 
+quick startup time, low resident set size (RSS) memory, and increased developer productivity”
+
+
+
+---------------------------------------------------------------------------------------------
+Developer-Friendly
+---------------------------------------------------------------------------------------------
+
+“Quarkus allows you, the Java developer, to be more productive, 
+and it helps you stay relevant in the fast-paced area of microservices and cloud-based applications.”
+
+
+“Quarkus will enable your applications to scale better, 
+to more tightly fill up a Kubernetes cluster utilizing fewer resources overall, 
+and to make use of decades of community work in open source Java.”
+
+
+“To start developing with Quarkus, you won’t need to learn a new technology. 
+If you’re already familiar with dependency injection, JAX-RS, Hibernate, and Eclipse MicroProfile concepts, 
+there’s nothing new here”
+
+
+“Quarkus is designed to be an optimized choice for the next generation of application development and deployment.”
+
+---------------------------------------------------------------------------------------------
+Integration with Kubernetes
+---------------------------------------------------------------------------------------------
+
+“Quarkus eliminates that work by having a number of enhancements for deploying to and using Kubernetes with your application.”
+
+
+“When you bootstrap a Quarkus application, 
+it comes with some Dockerfile files used to generate the Docker containers for your application.”
+
+“These files are optimized for running with the OpenJDK JVM or running as native executables with GraalVM. ”
+
+“They contain what is necessary to run the application, thereby eliminating as much duplication 
+and unnecessary bloat from the container image as possible.”
+
+
+---------------------------------------------------------------------------------------------
+“Memory and First Response Time”
+---------------------------------------------------------------------------------------------
+
+
+“Quarkus is known as the “supersonic, subatomic” Java framework. ”
+
+
+“With Quarkus, you can deploy a native application optimized to be run on Kubernetes. 
+For example, let’s say you want to deploy a native application, optimized to be run on Kubernetes, 
+where the container image is around 200 MB or smaller. 
+
+In Quarkus, this application will start up and be ready to accept requests within a fraction of a second, 
+and it will use less than 50 MB of memory.”
+
+
+“ When scaling up you want your new application instances up 
+and running quickly—this is where a native executable shines. ”
+
+
+
+
