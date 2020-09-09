@@ -155,7 +155,7 @@ Container Envi
 2. Using Multiple datasources
 
 
-3. data-access in quarkus
+3. data-access patterns in Quarkus
 
     2 patterns
 
@@ -163,4 +163,19 @@ Container Envi
     -> respository pattern
 
 
-    
+--------------------------------------------------------------
+8. Fault Tolerance - Microprofile spec
+--------------------------------------------------------------
+
+
+
+1. Implementing Automatic Retries
+2. Implementing Timeouts
+3. Avoiding Overloads with the Bulkhead Pattern
+4. Avoiding Unnecessary Calls with the Circuit Breaker Pattern
+
+
+--------------------------------------------------------------
+8. REST Client a.k.a synchronous http calls b/w services - Microprofile spec
+--------------------------------------------------------------
+
