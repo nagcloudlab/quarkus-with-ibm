@@ -1,0 +1,29 @@
+
+--------------------------------------------------------------------
+
+how to use docker ?
+
+    -> build  ==> create docker image
+    -> ship   ==> push docker image to 'registry'
+    -> run    ==> creaet container from Image pulling from registry 
+
+--------------------------------------------------------------------    
+
+Tools
+------
+
+
+-> docker-compose
+
+
+container orchestration tools on cluster
+
+-> docker-swarm
+-> kubernetes   ( Widely used )
+
+    Amazon kubernetes    ==> EKS
+    Microsoft Kubernetes ==> Azure Kubernetes
+    RedHat               ==> OpenShift
+
+-> Apache Mesos
+--------------------------------------------------------------------    

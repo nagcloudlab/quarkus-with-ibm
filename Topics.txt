@@ -164,18 +164,26 @@ Container Envi
 
 
 --------------------------------------------------------------
-8. Fault Tolerance - Microprofile spec
+8. Microprofile spec
+--------------------------------------------------------------
+
+    - FaultTolerent
+    - Health
+    - Meterics
+    - Distributed Tracing
+    - Open Api
+    - REST Client
+
+
+--------------------------------------------------------------
+9. Quarkus Application on Kubernetes cluster / OpenShift
 --------------------------------------------------------------
 
 
+  -> Building & Pushing Container Images
 
-1. Implementing Automatic Retries
-2. Implementing Timeouts
-3. Avoiding Overloads with the Bulkhead Pattern
-4. Avoiding Unnecessary Calls with the Circuit Breaker Pattern
-
-
---------------------------------------------------------------
-8. REST Client a.k.a synchronous http calls b/w services - Microprofile spec
---------------------------------------------------------------
-
+    extensions
+    --------------
+        - jib
+        - docker
+        - s2i
