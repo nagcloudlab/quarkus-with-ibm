@@ -187,3 +187,22 @@ Container Envi
         - jib
         - docker
         - s2i
+
+
+--------------------------------------------------------------
+10. Reactive application with Quarkus
+--------------------------------------------------------------
+
+--------------------------------------------------------------
+11. 
+--------------------------------------------------------------
+
+    - how to create Quarkus extension
+    - spring projects with quarkus
+    - How to debug Quarkus appln ( 5 min )
+    - serverless appln with quarkus
+    - Final demo 
+
+---------------------------------------------------------    
+    
+

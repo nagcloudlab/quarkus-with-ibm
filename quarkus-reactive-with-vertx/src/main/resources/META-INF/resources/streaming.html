@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>SSE with Vert.x - Quarkus</title>
+    <script type="application/javascript" src="streaming.js"></script>
+</head>
+<body>
+<div id="container"></div>
+<script type="text/javascript">
+
+if (!!window.EventSource) {
+    var eventSource = new EventSource("/stream/Quarkus");
+    eventSource.onmessage = function (event) {
+        var container = document.getElementById("container");
+        var paragraph = document.createElement("p");
+        paragraph.innerHTML = event.data;
+        container.appendChild(paragraph);
+    };
+} else {
+    window.alert("EventSource not available on this browser.")
+}
+
+</script>
+</body>
+</html>
